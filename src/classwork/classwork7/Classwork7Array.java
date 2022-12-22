@@ -1,4 +1,4 @@
-package classwork;
+package classwork.classwork7;
 
 public class Classwork7Array {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package homework1;
+package homework.homework1;
 
 public class FigurePainter {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class FigurePainter {
             for (int j = 4; j > i; j--) {
                 System.out.print("  ");
             }
-            for (int k = -1; k < i; k++) {
+            for (int k = 0; k <= i; k++) {
                 System.out.print("* ");
 
             }
