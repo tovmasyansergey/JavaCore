@@ -13,7 +13,7 @@ public class ArrayExample {
 //            System.out.println(array[i]);
 //        for (int i = array.length - 1; i >= 0; i--) {
 //            System.out.println(array[i]);
-        System.out.println(array.length-1);
+        System.out.println(array[array.length-1]);
 
         }
 
