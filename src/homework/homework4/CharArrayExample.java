@@ -15,8 +15,9 @@ public class CharArrayExample {
         System.out.print(chars[(chars.length / 2)]);
         System.out.println();
         char[] chars3 = {'j', 'a', 'v', 'a', 'l', 'o', 'l', 'y'};
-        boolean m = chars3[(chars3.length - 2)] == 'l' && chars3[chars3.length - 1] == 'y' ? true : false;
-        System.out.println(m);
+       // boolean m = chars3[(chars3.length - 2)] == 'l' && chars3[chars3.length - 1] == 'y' ? true : false;
+       // System.out.println(m);
+        System.out.println(chars3[chars3.length-2] == 'l' && chars3[chars3.length - 1] == 'y');
         char[] text = {' ', ' ', 'b', 'a', 'r', 'e', 'v', ' ', ' '};
         for (int i = 0; i < text.length; i++) {
             if (text[i] != ' ')
