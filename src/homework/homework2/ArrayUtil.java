@@ -41,6 +41,7 @@ public class ArrayUtil {
         System.out.print("even = ");
         int count = 0;
         int num = 0;
+
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
                 count = count + 1;
@@ -55,7 +56,7 @@ public class ArrayUtil {
         for (
                 int i = 0;
                 i < array.length; i++) {
-            if (array[i] % 2 == 1) {
+            if (array[i] % 2 != 0) {
                 num = num + 1;
                 System.out.print(array[i] + " ");
             }
