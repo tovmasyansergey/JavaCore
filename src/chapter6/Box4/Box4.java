@@ -1,11 +1,10 @@
-package chapter6.returne;
+package chapter6.Box4;
 
-public class Box {
+public class Box4 {
     double width;
     double height;
     double depth;
-
     double volume(){
-        return width*height*depth;
+        return width*depth*height;
     }
 }

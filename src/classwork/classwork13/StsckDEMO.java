@@ -7,10 +7,22 @@ public class StsckDEMO {
         myStack.push(3);
         myStack.push(7);
         myStack.push(9);
+        myStack.push(9);
+        myStack.push(9);
+        myStack.push(9);
+        myStack.push(9);
+        myStack.push(9);
         myStack.push(90);
-        int a = myStack.pop();
+        myStack.push(90);
+        myStack.push(90);
+        myStack.push(90);
+        int a = myStack.pop();// a veragrel
         System.out.println(a);
         System.out.println(myStack.pop());
         int pop = myStack.pop();
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+
     }
 }

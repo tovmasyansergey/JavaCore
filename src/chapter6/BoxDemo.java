@@ -3,11 +3,14 @@ package chapter6;
 public class BoxDemo {
     public static void main(String[] args) {
         Box myBox = new Box();
-        double volume;
+
+        double vol;
         myBox.width = 10;
-        myBox.depth = 20;
-        myBox.height = 15;
-        volume = myBox.width * myBox.height * myBox.depth;
-        System.out.println("Ծավալը =" +volume);
+        myBox.depth = 15;
+        myBox.height = 20;
+
+        vol = myBox.depth * myBox.height * myBox.width;
+        System.out.println(vol);
+
     }
 }
