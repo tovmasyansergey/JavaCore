@@ -1,7 +1,6 @@
-package homework.homework8;
+package homework.homework9;
 
 public class DynamicArray {
-
     //սա մեր հիմնական մասիվն է, որտեղ պահելու ենք ավելացվող էլեմենտները
     private int[] array = new int[10];
     //սա մեր մասիվի մեջ ավելացված էլեմենտների քանակն է
@@ -14,7 +13,6 @@ public class DynamicArray {
             extend();//metod kancheln e
         }
         array[size++] = value;
-
     }
 
     //1․ ստեղծել հին մասիվից 10 էլեմենտ ավելի մեծ մասիվ
@@ -36,7 +34,6 @@ public class DynamicArray {
             return -1;
         }
         return array[index];
-
     }
 
 
@@ -45,46 +42,55 @@ public class DynamicArray {
         for (int i = 0; i < size; i++) {
             System.out.print(array[i] + " ");
         }
-
     }
 
     public void deleteByIndex(int index) {
-        if (index > size || index < 0) {
-            System.out.println("this element is empty");
+        if (index < 0 || index > size - 1) {
+            System.out.println("element is not");
             return;
         }
-        for (int i = index; i < size + 1; i++) {
-            array[i] = array[i + 1];
+        for (int i = index + 1; i < size; i++) {
+            array[i - 1] = array[i];
         }
         size--;
     }
 
     public void set(int index, int value) {
-        if (index > size || index < 0) {
-            System.out.println("this index is wrong");
+        if (index < 0 || index > size - 1) {
+            System.out.println("element is not");
             return;
         }
         array[index] = value;
     }
 
-    public boolean exists(int value) {
-        boolean exist = false;
-        for (int i : array) {
-            if (i == value)
-                exist = true;
-                break;
+    public void add(int index, int value) {
+        if (index < 0 || index > size - 1) {
+            System.out.println("element is not");
+            return;
         }
-        return exist;
+        if (size == array.length) {
+            extend();
+        }
+        for (int i = size; i >= index; i--) {
+            array[i] = array[i - 1];
+        }
+        array[index] = value;
+        size++;
     }
-
-    public int getIndexByValue(int value) {
+    public  boolean exists(int value){
         for (int i = 0; i < size; i++) {
-            if (array[i] == value) {
-                return i;
-            }
+         if (array[i] == value){
+             return true;
+         }
         }
-        return 0;
+        return false;
     }
-
-
+    public int getIndexByValue(int value){
+        for (int i = 0; i < size; i++) {
+      if (array[i] == value){
+          return i;
+      }
+        }
+        return -1;
+    }
 }
