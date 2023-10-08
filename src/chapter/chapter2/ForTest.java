@@ -16,12 +16,14 @@ public class ForTest {
         for (y = 0; y < 10;y = y + 1);
     }
 }*/
-        int x , y ;
+        int x, y;
         y = 20;
-        for(x = 0;x < 10;x = x+1 ){
+        for (x = 0; x < 10; x = x + 1) {
             System.out.println("znachenie x = " + x);
             System.out.println("znachenie y = " + y);
             y = y - 2;
+
+
         }
     }
 }

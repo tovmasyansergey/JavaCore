@@ -2,6 +2,8 @@ package chapter.chapter2;
 
 
 public class Example2 {
+
+
     public static void main(String[] args) {
 
 
@@ -9,7 +11,7 @@ public class Example2 {
         System.out.println(num);
         num = num*2;
         System.out.println(num);
-    } patasxany 200
+    } patasxany 200z
 }
 /*comment mi qani toxani meknabanutyun
 

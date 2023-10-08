@@ -25,9 +25,9 @@ public class IfTest {
 }
 }
         */
-//        int x , y ;
-//        x = 10;
-//        y = 20;
+        int x, y;
+        x = 10;
+        y = 20;
 //        if( x < y) {
 //            System.out.println("x menshe y");
 //        }
@@ -36,9 +36,10 @@ public class IfTest {
 //            System.out.println("x ravno y");
 //
 //        }
-//        x = x *2;
-//        if( x > y ){
-//            System.out.println("x bolshe y");
-//        }
+        x = x * 8;
+        if (x > y) {
+            System.out.println("x bolshe y");
+        }
+
     }
 }
