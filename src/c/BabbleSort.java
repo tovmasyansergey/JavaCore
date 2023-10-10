@@ -3,9 +3,10 @@ package c;
 import java.util.Scanner;
 
 public class BabbleSort {
+    private final static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
         int[] array = new int[5];
         for (int j = 0; j < 5; j++) {
             array[j] = scanner.nextInt();
@@ -33,10 +34,6 @@ public class BabbleSort {
                 System.out.println(j);
             }
         }
-
-
-
-
 
 
     }
